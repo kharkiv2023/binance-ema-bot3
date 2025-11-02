@@ -21,7 +21,7 @@ previous_states = {}
 
 def get_klines(symbol, interval, limit=60):
     try:
-        url = 'https://api.binance.com/api/v3/klines'
+        url = 'https://api.binance.vision/api/v3/klines'
         params = {'symbol': symbol, 'interval': interval, 'limit': limit}
         resp = requests.get(url, params=params, timeout=10)
         resp.raise_for_status()
